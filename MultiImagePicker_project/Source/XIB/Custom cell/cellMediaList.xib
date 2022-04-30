@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cellMediaList" id="gTV-IL-0wX" customClass="cellMediaList" customModule="MultiImagePicker_project" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="272" height="252"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="272" height="252"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Skc-6l-8eg">
+                        <rect key="frame" x="7.5" y="7.5" width="257" height="237"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="MOX-75-FnA">
+                                <rect key="frame" x="0.0" y="0.0" width="257" height="237"/>
+                            </imageView>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dfz-eM-x6W">
+                                <rect key="frame" x="0.0" y="0.0" width="257" height="237"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_Selected" translatesAutoresizingMaskIntoConstraints="NO" id="dqt-tz-cpo">
+                                        <rect key="frame" x="212" y="192" width="35" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="dqt-tz-cpo" secondAttribute="height" id="qS3-7z-Qqq"/>
+                                            <constraint firstAttribute="height" constant="35" id="zdg-oh-iUF">
+                                                <variation key="heightClass=regular-widthClass=regular" constant="50"/>
+                                            </constraint>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_play" translatesAutoresizingMaskIntoConstraints="NO" id="u2A-yb-4lx">
+                                        <rect key="frame" x="87" y="77" width="83" height="83"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="u2A-yb-4lx" secondAttribute="height" id="hJ8-hc-NKQ"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="u2A-yb-4lx" firstAttribute="centerX" secondItem="Dfz-eM-x6W" secondAttribute="centerX" id="80c-S6-DE7"/>
+                                    <constraint firstItem="u2A-yb-4lx" firstAttribute="centerY" secondItem="Dfz-eM-x6W" secondAttribute="centerY" id="cJN-Gc-fz0"/>
+                                    <constraint firstAttribute="bottom" secondItem="dqt-tz-cpo" secondAttribute="bottom" constant="10" id="fjp-OD-zsg"/>
+                                    <constraint firstAttribute="trailing" secondItem="dqt-tz-cpo" secondAttribute="trailing" constant="10" id="ktM-AI-IJw"/>
+                                    <constraint firstItem="u2A-yb-4lx" firstAttribute="height" secondItem="Dfz-eM-x6W" secondAttribute="height" multiplier="0.35" id="u3F-sE-INo"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="MOX-75-FnA" secondAttribute="bottom" id="3kd-3e-Hhu"/>
+                            <constraint firstAttribute="trailing" secondItem="MOX-75-FnA" secondAttribute="trailing" id="BDV-Zl-TrL"/>
+                            <constraint firstAttribute="bottom" secondItem="Dfz-eM-x6W" secondAttribute="bottom" id="Dic-4Q-3Bz"/>
+                            <constraint firstItem="Dfz-eM-x6W" firstAttribute="leading" secondItem="Skc-6l-8eg" secondAttribute="leading" id="Wyx-ub-Q0e"/>
+                            <constraint firstItem="MOX-75-FnA" firstAttribute="leading" secondItem="Skc-6l-8eg" secondAttribute="leading" id="ppM-p2-VK5"/>
+                            <constraint firstItem="Dfz-eM-x6W" firstAttribute="top" secondItem="Skc-6l-8eg" secondAttribute="top" id="tbI-9I-hxH"/>
+                            <constraint firstItem="MOX-75-FnA" firstAttribute="top" secondItem="Skc-6l-8eg" secondAttribute="top" id="vjO-4n-247"/>
+                            <constraint firstAttribute="trailing" secondItem="Dfz-eM-x6W" secondAttribute="trailing" id="zyU-KC-MuU"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="Skc-6l-8eg" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="7.5" id="IUn-xh-R3K">
+                    <variation key="heightClass=regular-widthClass=regular" constant="15"/>
+                </constraint>
+                <constraint firstAttribute="trailing" secondItem="Skc-6l-8eg" secondAttribute="trailing" constant="7.5" id="Qrk-Kc-yBg">
+                    <variation key="heightClass=regular-widthClass=regular" constant="15"/>
+                </constraint>
+                <constraint firstItem="Skc-6l-8eg" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="7.5" id="qPs-eJ-DyY">
+                    <variation key="heightClass=regular-widthClass=regular" constant="15"/>
+                </constraint>
+                <constraint firstAttribute="bottom" secondItem="Skc-6l-8eg" secondAttribute="bottom" constant="7.5" id="v4u-82-XKW">
+                    <variation key="heightClass=regular-widthClass=regular" constant="15"/>
+                </constraint>
+            </constraints>
+            <size key="customSize" width="272" height="252"/>
+            <connections>
+                <outlet property="imgPlayBtn" destination="u2A-yb-4lx" id="VzI-Vz-oqB"/>
+                <outlet property="imgShowSelection" destination="dqt-tz-cpo" id="MVz-eL-LYH"/>
+                <outlet property="imgViewPlaceHolder" destination="MOX-75-FnA" id="QFL-fh-CoX"/>
+                <outlet property="viewContainer" destination="Skc-6l-8eg" id="djR-58-zbu"/>
+            </connections>
+            <point key="canvasLocation" x="301.44927536231887" y="167.41071428571428"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="ic_Selected" width="100" height="100"/>
+        <image name="ic_play" width="100" height="100"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
