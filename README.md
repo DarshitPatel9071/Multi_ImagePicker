@@ -1,2 +1,2 @@
 # MultiImagePicker
-MultiImagePicker
+Multi_ImagePicker
